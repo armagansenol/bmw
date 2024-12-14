@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/footer"
 import Header from "@/components/shared/header"
 import Image from "next/image"
 import Link from "next/link"
@@ -29,7 +30,7 @@ export default function WorkDetail() {
 
           <div className="relative">
             <Image
-              src="/placeholder.svg"
+              src="/img/placeholder.jpg"
               alt="Project Preview"
               width={800}
               height={600}
@@ -69,6 +70,8 @@ export default function WorkDetail() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   )
 }

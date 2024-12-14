@@ -38,10 +38,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
-
-      {/* Hero Section */}
       <section className="px-6 pt-12 pb-24">
-        <div className="max-w-7xl mx-auto">
+        <div className="container">
           <div className="relative">
             <h1 className="text-[8vw] font-bold leading-none tracking-tighter">
               <LogoText />
@@ -54,8 +52,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
-      {/* Video Section */}
       <section className="relative h-[600px] w-full">
         <Image src="/img/placeholder.jpg" alt="Aurora Background" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/20" />
@@ -63,10 +59,8 @@ export default function Home() {
           [ PLAY SHOWREEL ]
         </button>
       </section>
-
-      {/* Capabilities Section */}
       <section className="px-6 py-24 bg-black">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+        <div className="container grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="text-2xl font-bold mb-8">OUR CAPABILITIES</h2>
             <p className="text-gray-400 max-w-xl">
@@ -83,10 +77,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Portfolio Section */}
       <section className="bg-black text-white py-16">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="container px-6">
           <div className="space-y-32">
             {projects.map((project, index) => (
               <div key={index} className="grid md:grid-cols-2 gap-8 items-center">
@@ -110,7 +102,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   )

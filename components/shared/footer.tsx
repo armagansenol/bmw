@@ -3,9 +3,8 @@ import { LogoText } from "./icons"
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Top Navigation */}
+    <footer className="bg-black text-white py-28">
+      <div className="container px-6 flex flex-col items-stretch gap-5">
         <nav className="mb-16">
           <ul className="flex space-x-8">
             <li>
@@ -20,22 +19,12 @@ export default function Footer() {
             </li>
           </ul>
         </nav>
-
-        {/* Main Footer Content */}
-        <div className="relative">
-          {/* Copyright and Location */}
-          <div className="absolute top-0 left-0 text-sm text-gray-400 space-y-2">
+        <div className="flex justify-between">
+          <div className="flex gap-5 font-light">
             <p>2024, ALL RIGHTS RESERVED</p>
             <p>BASED IN ISTANBUL</p>
           </div>
-
-          {/* Logo */}
-          <h2 className="text-[8vw] font-bold leading-none tracking-tighter text-white">
-            <LogoText />
-          </h2>
-
-          {/* Social Links */}
-          <div className="absolute top-0 right-0 flex space-x-6 text-sm">
+          <div className="flex gap-5">
             <Link
               href="https://dribbble.com"
               target="_blank"
@@ -61,6 +50,9 @@ export default function Footer() {
               [ LINKEDIN ]
             </Link>
           </div>
+        </div>
+        <div>
+          <LogoText />
         </div>
       </div>
     </footer>
