@@ -1,5 +1,5 @@
-import Image from "next/image"
 import Link from "next/link"
+import { LogoText } from "./icons"
 
 export default function Footer() {
   return (
@@ -30,7 +30,9 @@ export default function Footer() {
           </div>
 
           {/* Logo */}
-          <h2 className="text-[8vw] font-bold leading-none tracking-tighter text-white">BYTE MY WORK</h2>
+          <h2 className="text-[8vw] font-bold leading-none tracking-tighter text-white">
+            <LogoText />
+          </h2>
 
           {/* Social Links */}
           <div className="absolute top-0 right-0 flex space-x-6 text-sm">
@@ -58,11 +60,6 @@ export default function Footer() {
             >
               [ LINKEDIN ]
             </Link>
-          </div>
-
-          {/* 3D Object */}
-          <div className="absolute left-[50%] top-1/2 transform -translate-y-1/2">
-            <Image src="/placeholder.svg" alt="Golden 3D Object" width={200} height={200} className="object-contain" />
           </div>
         </div>
       </div>

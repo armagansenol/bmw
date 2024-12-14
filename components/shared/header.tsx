@@ -18,9 +18,9 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <div className="h-16 w-16">
+      <Link href="/" className="h-16 w-16">
         <Logo />
-      </div>
+      </Link>
       <div className="flex items-center space-x-4">
         <Link href="/tr" className="text-gray-400 hover:text-white transition-colors" aria-label="Switch to Turkish">
           TR

@@ -1,5 +1,6 @@
 import Footer from "@/components/shared/footer"
 import Header from "@/components/shared/header"
+import { LogoText } from "@/components/shared/icons"
 import Image from "next/image"
 
 interface Project {
@@ -15,21 +16,21 @@ const projects: Project[] = [
     tags: ["WEB DESIGN", "WEB DEVELOPMENT"],
     description:
       "WE HAVE CREATED A MODERN, MINIMALISTIC LOGO THAT BLENDS THE CONCEPTS OF ENERGY AND ENVIRONMENTAL FRIENDLINESS.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/img/placeholder.jpg",
   },
   {
     title: "PROJECT NAME",
     tags: ["WEB DESIGN", "WEB DEVELOPMENT"],
     description:
       "WE HAVE CREATED A MODERN, MINIMALISTIC LOGO THAT BLENDS THE CONCEPTS OF ENERGY AND ENVIRONMENTAL FRIENDLINESS.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/img/placeholder.jpg",
   },
   {
     title: "PROJECT NAME",
     tags: ["WEB DESIGN", "WEB DEVELOPMENT"],
     description:
       "WE HAVE CREATED A MODERN, MINIMALISTIC LOGO THAT BLENDS THE CONCEPTS OF ENERGY AND ENVIRONMENTAL FRIENDLINESS.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/img/placeholder.jpg",
   },
 ]
 
@@ -42,16 +43,9 @@ export default function Home() {
       <section className="px-6 pt-12 pb-24">
         <div className="max-w-7xl mx-auto">
           <div className="relative">
-            <h1 className="text-[8vw] font-bold leading-none tracking-tighter">BYTE MY WORK</h1>
-            <div className="absolute right-[20%] top-1/2 transform -translate-y-1/2">
-              <Image
-                src="/placeholder.svg"
-                alt="Golden 3D Object"
-                width={150}
-                height={150}
-                className="object-contain"
-              />
-            </div>
+            <h1 className="text-[8vw] font-bold leading-none tracking-tighter">
+              <LogoText />
+            </h1>
           </div>
           <p className="text-xl mt-4">WEB DESIGN & DEV AGENCY</p>
           <p className="max-w-2xl mt-8 text-gray-400">
@@ -63,7 +57,7 @@ export default function Home() {
 
       {/* Video Section */}
       <section className="relative h-[600px] w-full">
-        <Image src="/placeholder.svg?height=600&width=1200" alt="Aurora Background" fill className="object-cover" />
+        <Image src="/img/placeholder.jpg" alt="Aurora Background" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/20" />
         <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white hover:text-gray-200 transition-colors">
           [ PLAY SHOWREEL ]
